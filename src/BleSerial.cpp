@@ -152,7 +152,6 @@ void BleSerial::setupSerialService()
 	txCharacteristic->setReadProperty(true);
 	rxCharacteristic->setWriteProperty(true);
 
-	txCharacteristic->setWriteNoResponseProperty(true);
 	rxCharacteristic->setWriteNoResponseProperty(true);
 
 	rxCharacteristic->setCallbacks(this);
